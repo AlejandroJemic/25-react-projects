@@ -1,0 +1,38 @@
+.acordion{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 300px;
+    margin: 5px auto;
+    font-size: calc(6px + 2vmin);
+    justify-content: center;
+}
+.accordion-item{
+    color: white;
+    padding: 1vmin;
+    background-color: #1010105d;
+    border-radius: 2vmin;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+
+
+.accordion-no-data {
+    color: rgb(90, 0, 0);
+    padding: 1rem;
+}
+
+.accordion-button{
+    margin: auto 10px;
+    border-radius: 8px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+}
