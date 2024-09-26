@@ -35,9 +35,22 @@ h2{
   padding: 1rem;
   max-height: 2rem;
   background-color: #1a1b1d;
+  border-top: 3px solid #3b414d;
+  
   font-size: calc(8px + 2vmin);
   color: white;
   font-weight: 300;
+}
+
+button{
+  border-radius: 8px;
+  padding: 0.5rem;
+  background-color: #101010;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border: solid 1px #3b414d;
+  margin-inline: 5px;
 }
 
 

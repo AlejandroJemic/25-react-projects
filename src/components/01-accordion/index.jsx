@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './styles.css';
 import data from './data.js';
 
@@ -24,7 +24,7 @@ export default function Accordion() {
 
   return data && data.length > 0 ? (
     <div className="acordion">
-      <button className="accordion-multiple" onClick={() => setMultiSelect(!isMultiSelect)}>{isMultiSelect ? 'set Single Select':'set Multiple Select'}</button>
+      <button onClick={() => setMultiSelect(!isMultiSelect)}>{isMultiSelect ? 'set Single Select':'set Multiple Select'}</button>
 
       {data.map((item) => (
         <AccordionItem key={item.id} 
@@ -41,12 +41,11 @@ export default function Accordion() {
 
 }
 
-function AccordionItem({item, selectedId, isMultiSelect, multiple, handleSelection}) {
+function AccordionItem({...props}) {
+  const {item, selectedId, isMultiSelect, multiple, handleSelection} = props;
   let expand = false;
-  if(isMultiSelect){
-  
+  if(isMultiSelect)
     expand = (multiple.findIndex((element) => element === item.id) > -1) ?  true : false;
-  }
   else
     expand = selectedId === item.id ? true : false;
 
@@ -56,9 +55,7 @@ function AccordionItem({item, selectedId, isMultiSelect, multiple, handleSelecti
         <p>{item.title}</p>
         {expand && <p>{item.content}</p>}
       </div>
-     
       <button className='accordion-button' onClick={() => handleSelection(item.id)}>{expand ? '-':'+'  }</button>
-     
     </div>
   );
 }
