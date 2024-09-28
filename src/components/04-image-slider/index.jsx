@@ -83,8 +83,8 @@ function MovieSlider({ movies, index }) {
             <div key={movieIndex}>
               <div className="movie-title">{`${movie.title}`}</div>
               <img
-                alt={`img-${movieIndex}`}
-                src={`https://image.tmdb.org/t/p/w300/${movie.backdrop_path}`}
+                alt=""
+                src={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`}
                 className="movie-image"
               />
             </div>
