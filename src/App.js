@@ -4,6 +4,7 @@ import RandomColor from './components/02-ramdom-color/random-color';
 import ColorMatrix from './components/02-ramdom-color/color-matrix';
 import StarsRating from './components/03-stars-rating';
 import ImageSlider from './components/04-image-slider';
+import LoadMore from './components/05-products-loader';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
         <StarsRating StarsNumber={10} />
         <h2>Now Playing Slider</h2>
         <ImageSlider />
+        <h2>Products loader</h2>
+        <LoadMore />
       </div>
     </div>
   );
