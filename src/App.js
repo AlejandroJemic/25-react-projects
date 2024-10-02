@@ -5,7 +5,7 @@ import ColorMatrix from './components/02-ramdom-color/color-matrix';
 import StarsRating from './components/03-stars-rating';
 import ImageSlider from './components/04-image-slider';
 import LoadMore from './components/05-products-loader';
-
+import MenuList from './components/06-tree-view';
 function App() {
   return (
     <div className="App">
@@ -23,6 +23,8 @@ function App() {
         <ImageSlider />
         <h2>Products loader</h2>
         <LoadMore />
+        <h2>Menu Bar ( recursive )</h2>
+        <MenuList />
       </div>
     </div>
   );

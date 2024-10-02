@@ -20,6 +20,7 @@ function LoadMore() {
       });
     }
   }, [data]);
+  
 
   const scrollToBottom = () => {
     loadRef.current?.scrollIntoView({ behavior: "smooth" })
