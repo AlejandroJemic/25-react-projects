@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import  {template}  from './colors-template.js';
 
 const generateHexColors = () => {
   const colors = [];
@@ -34,15 +35,35 @@ export default function ColorMatrix() {
     });
   }
 
-  
   function copyColor(color) {
     navigator.clipboard.writeText(color);
     alert('Color copied: ' + color);
   }
 
+  function deleteColor(e, color){
+    e.preventDefault();
+    setColorsArray((prevColors) => {
+      const updatedColors = prevColors.filter((c) => c !== color);
+      return updatedColors;
+    });
+  }
+
   function exportColors(){
+    let colorsHtml = '';
+    colorsArray.forEach((color) => {
+      colorsHtml += `<div style="background-color: ${color}">${color}</div>`
+    })
+    let html = template.replace('((colors))', colorsHtml);
+    const blob = new Blob([html], { type: 'text/html' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'colors.html';
+    link.click();
+    URL.revokeObjectURL(url);
+   
     navigator.clipboard.writeText(colorsArray.join(' - '));
-    alert('All colors copied');
+    alert('All colors exported (and copied)');
   }
 
   const getLuminance = (color) => {
@@ -70,6 +91,7 @@ export default function ColorMatrix() {
                 <div
                   key={index}
                   onClick={() => copyColor(color)}
+                  onContextMenu={(e) => deleteColor(e, color)}
                   className="colorsArray-cell"
                   style={{
                     backgroundColor: color,

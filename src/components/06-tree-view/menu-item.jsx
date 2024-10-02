@@ -31,9 +31,7 @@ export default function MenuItem({ item, isSubMenu = false }) {
   else return null;
 }
 
-// import React from 'react';
-// import './styles.css';
-// import MenuItem from './menu-item'
+
 
 export function SubMenuList({ list }) {
   return (
