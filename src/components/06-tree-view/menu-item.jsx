@@ -13,7 +13,7 @@ export default function MenuItem({ item, isSubMenu = false }) {
 
   if (item)
     return (
-      <div key={item.id} className={isSubMenu ? 'sub-menu-item' : 'menu-item'}>
+      <div  className={isSubMenu ? 'sub-menu-item' : 'menu-item'}>
         <p>
           {item.label}
           {item.children && item.children.length > 0 && (
@@ -39,7 +39,7 @@ export function SubMenuList({ list }) {
       {list &&
         list.length > 0 &&
         list.map((item) => {
-          return <MenuItem item={item} isSubMenu={true} />;
+          return <MenuItem key={item.id} item={item} isSubMenu={true} />;
         })}
     </div>
   );
