@@ -6,6 +6,9 @@ import StarsRating from './components/03-stars-rating';
 import ImageSlider from './components/04-image-slider';
 import LoadMore from './components/05-products-loader';
 import MenuList from './components/06-tree-view';
+import QrCodeGenerator from './components/07-qr-code';
+import ThemeToggle from './components/08-theme-toggle';
+
 function App() {
   return (
     <div className="App">
@@ -25,6 +28,10 @@ function App() {
         <LoadMore />
         <h2>Menu Bar ( recursive )</h2>
         <MenuList />
+        <h2>QR code generator</h2>
+        <QrCodeGenerator />
+        <h2>Theme Toggle</h2>
+        <ThemeToggle />
       </div>
     </div>
   );

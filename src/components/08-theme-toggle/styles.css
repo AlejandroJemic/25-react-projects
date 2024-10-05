@@ -1,0 +1,23 @@
+
+
+.theme-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 50%;
+    min-width: 300px;
+    margin: 20px auto;
+    font-size: calc(6px + 2vmin);
+    justify-content: center;
+    --background-color: #101010;
+    --color:white;
+    background-color: var(--background-color);
+    color: var(--color);
+    border-radius: 2vmin;
+    padding: 10px;
+}
+
+[data-theme='light'] {
+    --background-color: white;
+    --color:  #101010
+}
