@@ -8,11 +8,15 @@ import LoadMore from './components/05-products-loader';
 import MenuList from './components/06-tree-view';
 import QrCodeGenerator from './components/07-qr-code';
 import ThemeToggle from './components/08-theme-toggle';
+import ScrollIndicator from './components/09-scroll-indicator';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">25 React Projects</header>
+      <header className="App-header">
+        25 React Projects
+        <ScrollIndicator />
+      </header>
       <div style={{ overflow_y: 'scroll', justifyContent: 'center' }}>
         <h2>Accordion</h2>
         <Accordion />
@@ -32,6 +36,8 @@ function App() {
         <QrCodeGenerator />
         <h2>Theme Toggle</h2>
         <ThemeToggle />
+        <h2>Scroll Indicator (in the top of the page)</h2>
+        {/* See <ScrollIndicator /> component*/}
       </div>
     </div>
   );
