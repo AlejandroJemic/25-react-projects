@@ -1,0 +1,82 @@
+.modal-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    min-width: 300px;
+    height: 150px;
+    margin: 20px auto;
+    font-size: calc(8px + 2vmin);
+    align-items: center;
+    justify-content: space-around;
+    background-color: #101010;
+    color: white;
+    border-radius: 2vmin;
+    padding: 10px;
+    
+}
+
+.modal-container h3{
+    justify-self: flex-start;
+    margin: 10x auto;
+    font-size: calc(6px + 1.5vmin);
+    font-weight: 600;
+}
+
+.modal-content{
+    position: fixed;
+    top: 25%;
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    min-height: 300px;
+    min-width: 300px;
+    border: 3px solid #3b414d;
+    background-color: #101010;
+    border-radius: 2vmin;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    color: white;
+    
+}
+
+.modal-content header{
+    position: relative;
+    color: #f93;
+    font-size: calc(10px + 1.5vmin); 
+    font-weight: 600;
+    height: 20%;
+    border-bottom: 1px solid #344;
+    overflow-y: hidden;
+}
+
+.modal-content .close{
+    
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    cursor: pointer;
+    color: #f93;
+    font-size: calc(15px + 1.5vmin); 
+    font-weight: 600;
+}
+
+.modal-content main {
+    height: 80%;
+    font-size: calc(10px + 1vmin); 
+    padding: 2vmin;
+}
+
+.modal-content footer{
+    padding-top: 20px;
+    color: white;
+    font-size: calc(10px + 0.5vmin); 
+    border-top: 1px solid #344;
+    justify-self: flex-end;
+    height: 20%;
+    text-align: center;
+    vertical-align: middle;
+}
+

@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { data } from './data';
 import './styles.css';
 
 export default function TabsPanel() {
-  const [selected, setSelected] = React.useState(0);
-
+  const [selected, setSelected] = React.useState(null);
+  useEffect(() => {
+    setSelected(data[0].id);
+  }, []);
   function select(id) {
     setSelected(id);
   }
@@ -43,7 +45,8 @@ function TabsList({ data, handler, selected }) {
 function TabsContent({ data, selected }) {
   return (
     <div className="tabs-content">
-      {data &&
+      {selected !== null &&
+        data &&
         data.length > 0 &&
         data.filter((item) => item.id === selected)[0].content}
     </div>

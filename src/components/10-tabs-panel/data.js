@@ -1,20 +1,20 @@
 export const data = [
   {
     id: 'tab1',
-    title: 'Inicio',
+    title: 'Home',
     content:
-      'Bienvenido a nuestra página. Esta es la sección de inicio donde podrás encontrar información relevante sobre nuestros servicios y productos.',
+      'Welcome to our page. This is the home section where you can find relevant information about our services and products.',
   },
   {
     id: 'tab2',
-    title: 'Servicios',
+    title: 'Services',
     content:
-      'Ofrecemos una variedad de servicios para satisfacer tus necesidades, incluyendo consultoría, desarrollo de software y soporte técnico.',
+      'We offer a variety of services to meet your needs, including consulting, software development, and technical support.',
   },
   {
     id: 'tab3',
-    title: 'Contacto',
+    title: 'Contact',
     content:
-      'Puedes ponerte en contacto con nosotros a través del siguiente formulario o llamarnos directamente a nuestro número de atención al cliente.',
+      'You can contact us through the following form or call us directly at our customer service number.',
   },
 ];

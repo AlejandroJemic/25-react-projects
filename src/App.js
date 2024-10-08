@@ -10,6 +10,7 @@ import QrCodeGenerator from './components/07-qr-code';
 import ThemeToggle from './components/08-theme-toggle';
 import ScrollIndicator from './components/09-scroll-indicator';
 import TabsPanel from './components/10-tabs-panel';
+import ModalContainer from './components/11-modal-popup';
 
 function App() {
   return (
@@ -41,6 +42,8 @@ function App() {
         {/* See <ScrollIndicator /> component*/}
         <h2>Tabs Panel</h2>
         <TabsPanel />
+        <h2>Modal Popup</h2>
+        <ModalContainer />
       </div>
     </div>
   );
