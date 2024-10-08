@@ -6,6 +6,6 @@ export const data = {
   footer: {
     label: 'Discover More',
     action: 'openLink',
-    url: 'https://www.nasa.gov',
+    url: 'https://www.solarsystemscope.com/',
   },
 };

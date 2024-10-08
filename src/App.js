@@ -11,6 +11,7 @@ import ThemeToggle from './components/08-theme-toggle';
 import ScrollIndicator from './components/09-scroll-indicator';
 import TabsPanel from './components/10-tabs-panel';
 import ModalContainer from './components/11-modal-popup';
+import GithubProfile from './components/12-github-profile';
 
 function App() {
   return (
@@ -44,6 +45,8 @@ function App() {
         <TabsPanel />
         <h2>Modal Popup</h2>
         <ModalContainer />
+        <h2>Github Profile Search</h2>
+        <GithubProfile />
       </div>
     </div>
   );
