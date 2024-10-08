@@ -61,4 +61,5 @@
     padding: 10px;
     font-size: calc(6px + 1vmin);
     border-top: none;
+    padding-inline: 50px;
 }
